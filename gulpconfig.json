@@ -1,0 +1,21 @@
+{
+  "serverPort": 8080,
+  "cssExtname": false,
+  "imageCdnPath": "http://imageCdnPath.com/",
+  "dir": {
+    "src": "./src/",
+    "cssDir": "css/",
+    "jsDir": "js/",
+    "dest": {
+      "dev": "./webroot/",
+      "build": "./demo/"
+    }
+  },
+  "pugTmps": [
+    "common"
+  ],
+  "entries": [
+    "app.js"
+  ],
+  "extCleanFiles": []
+}

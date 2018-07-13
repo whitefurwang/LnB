@@ -1,0 +1,46 @@
+extends ./template/tmp_common
+
+block title
+  title LnB f2e interview test
+
+block css
+  link(rel='stylesheet', href='./css/style.css')
+  link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.1.0/css/all.css', integrity='sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt', crossorigin='anonymous')
+
+block content
+  #app
+    .cover
+      .cover_box
+        .cover_title Personal Loans up to $40,000
+        .cover_links
+          .cover_link
+            span.active Personal Loans
+          .cover_link
+            a(href='#')
+              | Small Business Loans
+              i.fas.fa-external-link-alt
+          .cover_link
+            a(href='#')
+              | Auto Refinancing
+              i.fas.fa-external-link-alt
+        .cover_content
+          .cover_content_title Check your rate. It won't impact your credit score.
+          .cover_content_privacy
+            img(src='./img/privacy.png')
+          .cover_content_form
+            .cover_content_form_custom
+              label.cover_content_form_input
+                span $
+                input#input_check_rate(placeholder='How much do you need?')
+              .cover_content_form_select
+                select#select_check_rate
+                  option(disabled selected value='') What's the money for?
+                  option(value='housing') Housing
+                  option(value='wedding') Wedding
+                  option(value='debt_consolidation') Debt Consolidation
+            button.cover_content_form_button#btn_check_rate Check Your Rate
+          .cover_content_link
+            a(href='#')
+              i.cover_icon_email
+                img(src='./img/email.png')
+              | Respond to a mail offer

@@ -1,0 +1,189 @@
+.cover
+  width: 100%
+  height: 100vh
+  background: url('../img/background.jpg') 50%
+  background-size: cover
+
+.cover_box
+  background-color: #fff
+  max-width: 720px
+  width: 100%
+  position: relative
+  top: 50vh
+  margin: 0 auto
+  +transform(translateY(-50%))
+
+.cover_title
+  font-size: 32px
+  line-height: 1.3em
+  font-weight: bold
+  padding: 16px
+  +max-t
+    text-align: center
+  +max-m
+    font-size: 24px
+
+.cover_links
+  line-height: 40px
+  +pie-clearfix
+  +max-t
+    position: absolute
+    width: 100%
+    bottom: 30px
+    z-index: 1
+
+.cover_link
+  +min-t
+    width: 33.33%
+    float: left
+    &:nth-child(2)
+      text-align: center
+    &:nth-child(3)
+      text-align: right
+  span, a
+    display: inline-block
+    padding: 0 16px
+    font-size: 14px
+    +box-sizing(border-box)
+    &.active
+      font-weight: bold
+      position: relative
+      &:before
+        content: ''
+        display: block
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 0 12px 12px 12px
+        border-color: transparent transparent $blue_light
+        position: absolute
+        left: 50%
+        bottom: 0
+        +transform(translateX(-12px))
+  span
+    color: $blue
+  a
+    color: $red
+  i
+    margin-left: 4px
+  +max-t
+    text-align: center
+    span
+      display: none
+
+.cover_content
+  position: relative
+  background-color: $blue_light
+  padding: 16px
+  +max-t
+    padding-bottom: 140px
+
+.cover_content_title
+  font-weight: bold
+  font-size: 14px
+
+.cover_content_privacy
+  position: absolute
+  right: 16px
+  top: 10px
+  width: 110px
+  img
+    width: 100%
+  +max-m
+    display: none
+
+.cover_content_form
+  margin-top: 12px
+  +pie-clearfix
+
+.cover_content_form_custom
+  width: calc(100% - 130px)
+  float: left
+  +pie-clearfix
+  +max-m
+    width: 100%
+
+.cover_content_form_input,
+.cover_content_form_select select,
+.cover_content_form_button
+  font-size: 14px
+  line-height: 40px
+  border-radius: 0
+  border: 0
+
+.cover_content_form_input,
+.cover_content_form_select
+  display: block
+  +min-m
+    width: calc(50% - 12px)
+    float: left
+    margin-right: 12px
+  +max-m
+    width: 100%
+    margin-bottom: 12px
+
+.cover_content_form_input
+  background-color: #fff
+  padding-left: 20px
+  position: relative
+  +box-sizing(border-box)
+  span
+    width: 20px
+    text-align: center
+    position: absolute
+    left: 0
+    top: 0
+  input
+    border: 0
+    line-height: 40px
+    width: 100%
+    padding: 0 3px
+    +box-sizing(border-box)
+
+.cover_content_form_select
+  position: relative
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 6px 6px 0 6px
+    border-color: #000 transparent transparent
+    position: absolute
+    right: 16px
+    top: 50%
+    +transform(translateY(-50%))
+  select
+    width: 100%
+    background-color: #fff
+    height: 40px
+    -webkit-appearance: none
+    padding: 0 24px
+
+.cover_content_form_button
+  background-color: $red
+  color: #fff
+  width: 130px
+  padding: 0
+  text-align: center
+  float: left
+  cursor: pointer
+  +max-m
+    width: 100%
+
+.cover_content_link
+  font-size: 14px
+  text-align: center
+  margin-top: 16px
+  +max-t
+    margin-top: 32px
+
+.cover_icon_email
+  display: inline-block
+  vertical-align: middle
+  width: 20px
+  margin-right: 8px
+  img
+    width: 100%

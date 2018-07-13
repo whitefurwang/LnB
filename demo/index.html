@@ -26,11 +26,11 @@
             <div class="cover_content_form">
               <div class="cover_content_form_custom">
                 <label class="cover_content_form_input"><span>$</span>
-                  <input placeholder="How much do you need?">
+                  <input id="input_check_rate" placeholder="How much do you need?">
                 </label>
                 <div class="cover_content_form_select">
-                  <select>
-                    <option disabled selected>What's the money for?</option>
+                  <select id="select_check_rate">
+                    <option disabled selected value="">What's the money for?</option>
                     <option value="housing">Housing</option>
                     <option value="wedding">Wedding</option>
                     <option value="debt_consolidation">Debt Consolidation</option>
@@ -39,11 +39,11 @@
               </div>
               <button class="cover_content_form_button" id="btn_check_rate">Check Your Rate</button>
             </div>
-            <div class="cover_content_link"><a href="#"><i class="icon_email"><img src="./img/email.png"></i>Respond to a mail offer</a></div>
+            <div class="cover_content_link"><a href="#"><i class="cover_icon_email"><img src="./img/email.png"></i>Respond to a mail offer</a></div>
           </div>
         </div>
       </div>
     </div>
-    <script data-main="./js/main" src="./js/vendors/require.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

@@ -1,0 +1,23 @@
+@import ./compass
+
+=pie-clearfix
+  &:after
+    content: ''
+    display: block
+    clear: both
+
+=max-t
+  @media (max-width: $tablet-width)
+    @content
+
+=max-m
+  @media (max-width: $mobile-width)
+    @content
+
+=min-t
+  @media (min-width: $tablet-width)
+    @content
+
+=min-m
+  @media (min-width: $mobile-width)
+    @content
